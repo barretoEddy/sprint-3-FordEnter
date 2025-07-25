@@ -7,15 +7,20 @@
 /* Estilização do cabeçalho */
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: var(--cor-primaria); */
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between; /*justify-content: space-between para distribuir logo e nav nas extremidades*/
-    padding: 1rem;
+    /* padding: 1rem; */
+    
 }
 .logo-ford {
     display: flex;
     align-items: start;
-    padding: 1rem;
 }
 
 header nav {
@@ -24,7 +29,7 @@ header nav {
     text-align: center;
 }
 header nav ul {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +43,7 @@ header nav ul li a {
     font-size: 1.8rem;
     color: var(--cor-secundaria);
 }
+
 /* Fim do cabeçalho (por enquanto) Depois adicionar animações */
 
 /* Main */
@@ -72,13 +78,14 @@ header nav ul li a {
 /* Estilização do footer */
 
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: var(--cor-primaria);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
-    padding: 15px;
+    /* margin-top: 30px; */
 }
 .redes-sociais span {
     color: white;
