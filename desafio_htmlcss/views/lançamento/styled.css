@@ -30,7 +30,6 @@ header nav {
     text-align: center;
 }
 header nav ul {
-    /* padding: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
