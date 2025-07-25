@@ -47,6 +47,35 @@ header nav ul li a {
 
 /* Fim do cabeçalho (por enquanto) Depois adicionar animações */
 
+/* Estilizalçao do main */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.video {display: flex;
+    margin-top: 110px;
+
+    iframe {
+    width: 70%;
+    }
+    
+}
+
+.carros ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Fim da estilizalçao do main */
 
 /* Estilização do footer */
 
@@ -59,9 +88,6 @@ footer {
     margin-top: 30px;
 }
 
-main {
-    padding-top: 80px;
-}
 .redes-sociais span {
     color: white;
     display: flex;
