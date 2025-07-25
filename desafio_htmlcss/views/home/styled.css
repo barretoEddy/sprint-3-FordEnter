@@ -40,6 +40,34 @@ header nav ul li a {
 }
 /* Fim do cabeçalho (por enquanto) Depois adicionar animações */
 
+/* Main */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: auto;
+}
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto p, .texto span {
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+.texto span a {
+    text-decoration: none;
+    color: black;
+}
 
 /* Estilização do footer */
 
@@ -50,6 +78,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+    padding: 15px;
 }
 .redes-sociais span {
     color: white;
