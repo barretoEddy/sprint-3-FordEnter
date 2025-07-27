@@ -7,7 +7,7 @@
 /* Estilização do cabeçalho */
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     background-color: white;
@@ -53,12 +53,13 @@ header nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 }
 .container img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1200px;
+    max-width: 1200px;
     height: auto;
 }
 .texto {
@@ -79,7 +80,6 @@ header nav ul li a {
 /* Estilização do footer */
 
 footer {
-    position: fixed;
     bottom: 0;
     background-color: var(--cor-primaria);
     width: 100%;

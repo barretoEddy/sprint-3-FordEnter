@@ -22,31 +22,83 @@
     </header>
 
     <main class="container">
-        <div class="video">
-            <iframe width="650" height="400" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <pre>
-                <hr>
-            </pre>
+        <div class="video-container">
+            <div class="video">
+                <iframe width="650" height="400" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="texto-video">
+                <p>
+                    ✨Pai, herói e motorista da Raça Ford. Quando a força de uma picape atravessa gerações, ela deixa de ser só veículo — vira legado. 
+                    Assista ao tributo da Ford Ranger 2022 ao Dia dos Pais e descubra como tradição e potência andam juntas nessa estrada brasileira
+                </p>
+            </div>
         </div>
         <div class="carros">
+            <!-- <h2 class="section-title">Escolha os modelos para comparar</h2> -->
             <ul>
-                <li><img src="../../img/XL Cabine.jpg" alt=""></li>
-                <li><img src="../../img/xls 2.2 diesel.jpg" alt="XLS 2.2 Diesel"></li>
-                <li><img src="../../img/storm.jpg" alt="Storm"></li>
+                <li class="car-card">
+                    <div class="flip-image-container">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="../../img/XL Cabine.jpg" alt="Ranger XL Cabine Simples">
+                            </div>
+                            <div class="card-back">
+                                <img src="../../img/XL_traseira.png" alt="Ranger XL Cabine Simples - Traseira">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>XL Cabine Simples 2.2 Diesel 4X4 MT 2022</h3>
+                        <p class="price">Preço Sugerido: R$ 183.850,00</p>
+                        <div class="compare-section">
+                            <label for="compare-xl">Comparar</label>
+                            <input type="checkbox" id="compare-xl" name="XL">
+                        </div>
+                    </div>
+                </li>
+                <li class="car-card">
+                    <div class="flip-image-container">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="../../img/xls 2.2 diesel.jpg" alt="Ranger XLS 2.2 Diesel">
+                            </div>
+                            <div class="card-back">
+                                <img src="../../img/XLS_traseira.png" alt="Ranger XLS 2.2 Diesel - Traseira">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="card-content">
+                        <h3>XLS 2.2 Diesel 4X4 AT 2022</h3>
+                        <p class="price">Preço Sugerido: R$ 220.690,00</p>
+                        <div class="compare-section">
+                            <label for="compare-xls">Comparar</label>
+                            <input type="checkbox" id="compare-xls" name="xls">
+                        </div>
+                    </div>
+                </li>
+                <li class="car-card">
+                    <div class="flip-image-container">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="../../img/storm.jpg" alt="Ranger Storm">
+                            </div>
+                            <div class="card-back">
+                                <img src="../../img/Storm_traseira.png" alt="Ranger Storm - Traseira">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="card-content">
+                        <h3>Storm 3.2 Diesel 4X4 AT 2022</h3>
+                        <p class="price">Preço Sugerido: R$ 222.790,00</p>
+                        <div class="compare-section">
+                            <label for="compare-storm">Comparar</label>
+                            <input type="checkbox" id="compare-storm" name="storm">
+                        </div>
+                    </div>
+                </li>
             </ul>
-            <div class="checkbox">
-                <label for="XL">
-                    <input type="checkbox" name="XL"> <span>XL Cabine<img src="../../img/info.png" alt="info"></span>
-                </label>
-                <label for="xls">
-                    <input type="checkbox" name="xls"> <span>XL Cabine<img src="../../img/info.png" alt="info"></span>
-                </label>
-                <label for="storm">
-                    <input type="checkbox" name="storm"> <span>XL Cabine<img src="../../img/info.png" alt="info"></span>
-                </label>
-            </div>
-            <div class="button">
-                <button>Comparar Carro</button>
+            <div class="button-container">
+                <button>Comparar Modelos</button>
             </div>
         </div>
     </main>

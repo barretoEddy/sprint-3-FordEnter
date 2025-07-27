@@ -7,7 +7,7 @@
 /* Estilização do cabeçalho */
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     background-color: white;
@@ -49,31 +49,183 @@ header nav ul li a {
 /* Estilizalçao do main */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
 
-.video {display: flex;
-    margin-top: 110px;
+.video-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1;
+}
 
-    iframe {
+.video {
     width: 70%;
-    }
-    
+    border-radius: 16px; /* Mesmo raio do painel de texto */
+    overflow: hidden; /* Esconde as bordas do iframe */
+    line-height: 0; /* Remove espaços indesejados */
+}
+
+.video iframe {
+    width: 100%;
+    height: 400px; /* Mantém a altura original */
+    border: none; /* Remove qualquer borda do iframe */
+}
+
+.texto-video {
+    width: 30%;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.carros {
+    margin-top: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .carros ul {
-    display: flex;
-    align-items: center;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
 }
 
-.checkbox {
+.car-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.card-content .price {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.compare-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    margin-top: auto;
 }
+
+.compare-section label {
+    font-size: 1.1rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+.compare-section input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.button-container button {
+    background: linear-gradient(90deg, var(--cor-secundaria), var(--cor-primaria));
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito de Virar a Imagem */
+.flip-image-container {
+    width: 100%;
+    height: 200px; /* Altura da imagem */
+    perspective: 1000px;
+}
+
+.flip-image-container .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Aciona a virada ao passar o mouse no card inteiro */
+.car-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-image-container .card-front,
+.flip-image-container .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-image-container .card-back {
+    transform: rotateY(180deg);
+    background-color: #fff; /* Fundo para o verso */
+}
+
+.flip-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Fim da estilizalçao do main */
 
 /* Estilização do footer */
