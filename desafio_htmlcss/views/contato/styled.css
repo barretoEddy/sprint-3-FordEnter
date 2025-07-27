@@ -1,4 +1,5 @@
 @import url('../../css/header.css');
+@import url('../../css/footer.css');
 
 /* Estilização do Main */
 main {
@@ -121,34 +122,5 @@ main {
 
 footer {
     position: fixed;
-    bottom: 0;  
-    background-color: var(--cor-primaria);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* margin-top: 30px; */
-}
-.redes-sociais span {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-.redes-sociais ul {
-    display: flex;
-    margin-left: 2rem;
-    gap: 1rem;;
-
-}
-.redes-sociais ul li a{
-    gap: 1rem;
-    list-style: none;
-}
-.imagem-footer {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    margin-right: 50px;
-
+    
 }

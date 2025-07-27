@@ -7,7 +7,6 @@
 /* Estilização do cabeçalho */
 
 header {
-    /* position: fixed; */
     top: 0;
     width: 100%;
     background-color: white;
@@ -16,7 +15,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /*justify-content: space-between para distribuir logo e nav nas extremidades*/
-    /* padding: 1rem; */
     
 }
 .logo-ford {
@@ -30,7 +28,6 @@ header nav {
     text-align: center;
 }
 header nav ul {
-    /* padding: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,4 +42,4 @@ header nav ul li a {
     color: var(--cor-secundaria);
 }
 
-/* Fim do cabeçalho (por enquanto) Depois adicionar animações */
+/* Fim do cabeçalho */ 
