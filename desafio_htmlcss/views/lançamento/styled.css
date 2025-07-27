@@ -1,50 +1,8 @@
-:root {
-    --cor-primaria: #1b357e;
-    --cor-secundaria: #1351d8;
-    
-}
+@import url('../../css/header.css');
+@import url('../../css/footer.css');
 
 /* Estilização do cabeçalho */
 
-header {
-    /* position: fixed; */
-    top: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /*justify-content: space-between para distribuir logo e nav nas extremidades*/
-    /* padding: 1rem; */
-    
-}
-.logo-ford {
-    display: flex;
-    align-items: start;
-}
-
-header nav {
-    align-content: center;
-    flex-grow: 1;
-    text-align: center;
-}
-header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-header nav ul li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.8rem;
-    color: var(--cor-secundaria);
-}
-
-/* Fim do cabeçalho (por enquanto) Depois adicionar animações */
 
 /* Estilizalçao do main */
 .container {
@@ -87,16 +45,8 @@ header nav ul li a {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-
 .carros {
     margin-top: 4rem;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: var(--cor-primaria);
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 .carros ul {
@@ -142,16 +92,6 @@ header nav ul li a {
     flex-grow: 1;
 }
 
-.compare-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    padding: 0.75rem 1.5rem;
-    border-radius: 10px;
-    margin-top: auto;
-}
-
 .compare-section label {
     font-size: 1.1rem;
     color: var(--cor-secundaria);
@@ -163,6 +103,46 @@ header nav ul li a {
     height: 20px;
     cursor: pointer;
 }
+#compare-xl, #compare-xls, #compare-storm {
+    display: none;
+}
+
+.switch-1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    margin-top: auto;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.slide-1, .slide-2, .slide-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    transform: translateX(-150%);
+}
+input[type="checkbox"]:checked + .switch-1 {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+}
+
+input[type="checkbox"]:checked + .switch-1 .slide-1,
+input[type="checkbox"]:checked + .switch-1 .slide-2,
+input[type="checkbox"]:checked + .switch-1 .slide-3 {
+    transform: translateX(0);
+}
+
 
 .button-container {
     text-align: center;
@@ -201,7 +181,7 @@ header nav ul li a {
     transform-style: preserve-3d;
 }
 
-/* Aciona a virada ao passar o mouse no card inteiro */
+/* Aciona a virada ao passar o mouse no card */
 .car-card:hover .card-inner {
     transform: rotateY(180deg);
 }
@@ -226,39 +206,4 @@ header nav ul li a {
     object-fit: cover;
 }
 
-/* Fim da estilizalçao do main */
 
-/* Estilização do footer */
-
-footer {
-    background-color: var(--cor-primaria);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.redes-sociais span {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-.redes-sociais ul {
-    display: flex;
-    margin-left: 2rem;
-    gap: 1rem;;
-
-}
-.redes-sociais ul li a{
-    gap: 1rem;
-    list-style: none;
-}
-.imagem-footer {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    margin-right: 50px;
-
-}

@@ -1,5 +1,3 @@
-@import url('../../css/header.css');
-@import url('../../css/footer.css');
 :root {
     --cor-primaria: #1b357e;
     --cor-secundaria: #1351d8;
@@ -48,36 +46,3 @@ header nav ul li a {
 }
 
 /* Fim do cabeçalho (por enquanto) Depois adicionar animações */
-
-/* Main */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
-.container img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    height: auto;
-}
-.texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.texto p, .texto span {
-    margin-top: 15px;
-    margin-right: 5px;
-    font-size: 1.5rem;
-}
-.texto span a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Estilização do footer */
-
