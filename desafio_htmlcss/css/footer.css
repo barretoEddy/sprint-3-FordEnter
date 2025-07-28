@@ -29,7 +29,10 @@ footer {
     align-items: center;
     padding: 1rem;
     margin-right: 50px;
+}
 
+.copy {
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
