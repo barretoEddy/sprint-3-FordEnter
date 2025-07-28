@@ -31,3 +31,29 @@ footer {
     margin-right: 50px;
 
 }
+
+@media screen and (max-width: 768px) {
+    .redes-sociais ul {
+        margin-left: 1rem;
+    }
+
+    .imagem-footer {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .redes-sociais ul {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .imagem-footer {
+        margin-right: 0;
+    }
+}
