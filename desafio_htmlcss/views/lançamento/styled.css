@@ -73,7 +73,7 @@
     padding: 1.5rem;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .card-content h3 {
@@ -89,56 +89,6 @@
     flex-grow: 1;
 }
 
-.compare-section label {
-    font-size: 1.1rem;
-    color: var(--cor-secundaria);
-    cursor: pointer;
-}
-
-.compare-section input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-#compare-xl, #compare-xls, #compare-storm {
-    display: none;
-}
-
-.switch-1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    padding: 0.75rem 1.5rem;
-    border-radius: 10px;
-    margin-top: auto;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-}
-.slide-1, .slide-2, .slide-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: var(--cor-secundaria);
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-    transform: translateX(-150%);
-}
-input[type="checkbox"]:checked + .switch-1 {
-    background-color: var(--cor-secundaria);
-    color: #fff;
-}
-
-input[type="checkbox"]:checked + .switch-1 .slide-1,
-input[type="checkbox"]:checked + .switch-1 .slide-2,
-input[type="checkbox"]:checked + .switch-1 .slide-3 {
-    transform: translateX(0);
-}
 
 
 .button-container {
