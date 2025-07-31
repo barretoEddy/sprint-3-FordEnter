@@ -31,16 +31,14 @@
                 <p>Sobre você:</p>
                 <input type="text" placeholder="Nome" required>
                 <input type="email" placeholder="E-mail" required>
-                <input type="number" placeholder="CPF" required>
-                <input type="text" placeholder="Sobrenome" required>
                 <input type="number" placeholder="Telefone" required>
-                <input list="comunicado" placeholder="Qual o motivo do contato?">
-
-                <datalist id="comunicado">
-                    <option value="Elogio">
-                    <option value="Crítica">
-                    <option value="Sugestão">
-                </datalist>
+                <input type="text" placeholder="Mensagem" required>
+                <select name="motivo-contato" required>
+                    <option value="" disabled selected>Qual o motivo do contato?</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Crítica">Crítica</option>
+                    <option value="Sugestão">Sugestão</option>
+                 </select>
                 <button>Enviar</button>
             </div>
     </main>
