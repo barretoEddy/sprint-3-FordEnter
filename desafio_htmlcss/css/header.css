@@ -15,7 +15,39 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /*justify-content: space-between para distribuir logo e nav nas extremidades*/
-    
+    position: relative;
+}
+
+/* Linha animada de preenchimento para links do header */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-primaria);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+    animation: fillLinkLine 0.3s ease forwards;
+}
+
+@keyframes fillLinkLine {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 .logo-ford {
     display: flex;
@@ -40,6 +72,16 @@ header nav ul li a {
     list-style: none;
     font-size: 1.8rem;
     color: var(--cor-secundaria);
+}
+.nav-link {
+    color: var(--cor-secundaria);
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--cor-primaria);
+    /* border-bottom-color: var(--cor-primaria); */
 }
 
 /* Fim do cabeçalho */
