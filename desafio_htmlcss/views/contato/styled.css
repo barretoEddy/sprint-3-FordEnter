@@ -152,7 +152,7 @@ main {
     }
 }
 
-footer {
+/* footer {
     width: 100%;
     background-color: var(--cor-primaria);
     color: white;
@@ -162,13 +162,9 @@ footer {
     align-items: center;
     box-sizing: border-box;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
-}
+} */
 
-@media screen and (max-width: 768px) {
-    footer {
-        box-shadow: none;
-    }
-}
+/* Responsividade da pagina */
 
 @media screen and (min-width: 768px) {
     main {
