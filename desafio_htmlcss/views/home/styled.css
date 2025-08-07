@@ -39,15 +39,8 @@ main {
     text-decoration: none;
     color: black;
 }
-
-@media screen and (min-width: 1200px) {
-    .container img {
-        max-width: 50%;
-    }
-
-    .texto p, .texto span {
-        font-size: 1.2rem;
-    }
+footer {
+    position: fixed;
 }
 
 @media screen and (max-width: 768px) {

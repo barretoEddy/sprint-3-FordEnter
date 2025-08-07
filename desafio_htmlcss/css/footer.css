@@ -39,6 +39,9 @@ footer {
     .redes-sociais ul {
         margin-left: 1rem;
     }
+    .redes-sociais span {
+        display: none;
+    }
 
     .imagem-footer {
         margin-right: 25px;
@@ -47,7 +50,6 @@ footer {
 
 @media screen and (max-width: 480px) {
     footer {
-        flex-direction: column;
         padding: 1rem;
     }
 
