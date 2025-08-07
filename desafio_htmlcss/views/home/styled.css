@@ -60,7 +60,10 @@ main {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 531px) {
+    footer {
+        position: fixed;
+    }
     .container img {
         max-width: 90%;
     }

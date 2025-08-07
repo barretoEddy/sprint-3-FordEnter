@@ -81,12 +81,14 @@ header nav ul li a {
 }
 .nav-link:hover, .nav-link.active {
     color: var(--cor-primaria);
-    /* border-bottom-color: var(--cor-primaria); */
 }
 
 /* Fim do cabeçalho */
 
 @media screen and (max-width: 768px) {
+    header {
+        margin-left: 0;
+    }
     header nav ul {
         gap: 1rem;
     }
@@ -98,6 +100,7 @@ header nav ul li a {
 
 @media screen and (max-width: 480px) {
     header {
+        width: 100%;
         flex-direction: column;
     }
 

@@ -3,9 +3,6 @@
 
 /* Estilizalçao do main */
 
-html {
-    /* scroll-behavior: smooth; */
-}
 
 .container {
     max-width: 1200px;
@@ -172,6 +169,10 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    
     .video-container {
         flex-direction: column;
     }
